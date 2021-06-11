@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
@@ -27,37 +28,30 @@
   clear: both;
 }
 
-#slider {
-  overflow: hidden;
-
-}
-#slider figure {
-  position: realtive;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  animation: 20s slider infinte;
-}
-#slider figure img{
-  width: 20%;
+.gx {
+  width :5%;
   float: left;
+  margin: 1%;}
+.w3-image{
+  width :100%;
+  float: left;
+  margin: 1%;}
 
-}
-@keyframes slider{
-  0%{ 
-  left:0; }
-  20%{
-    left:0;
-    25%{
-      left:-100%;
-    }
-  }
-}
-</style>
+ </style>
   </head>
+  <style >
+  .carousel-cell {
+    width: 100%;
+    }
+
+    /* cell number */
+    .carousel-cell:before {
+      display: block;
+    }
+  </style>
   <body bgcolor= red>
 
-    <img src="gx.png">
+    <img class="gx" src="gx.png">
     <p style="text-align:center"><b>INTRA'21</b></p>
     <p style="text-align:right"><b>CUrBrain</b></p>
    &nbsp;
@@ -91,34 +85,28 @@ Winners get goodies and gift vouchers.</p>
   </div>
 </div>
    
-<div class="row">
-  <div class="column" id="pic">
-    <img src="flawless.jpg"  style="width:100%">
-  </div>
-  <div class="column" id="pic">
 
-    <img src="crypto.jpg"  style="width:100%">
-  </div>
-  <div class="column" id="pic">
-
-    <img src="webd.png"  style="width:100%">
-  </div>
-  <div class="column" id="pic">
-
-    <img src="bughunt.jpg" style="width:100%">
-  </div>
-</div>   
-
-<div id="slider">
-  <figure>
-    <img src="flawless.jpg">
-    <img src="crypto.jpg" >
-    <img src="webd.png">
-    <img src="bughunt.jpg">
+<div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
+        <img class="w3-image" src="flawless.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" src="crypto.jpg"">
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" src="webd.png">
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" src="bughunt.jpg">
+      </div>
+    </div>
 
 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>*/
 
 
 
   </body>
 </html>
+
