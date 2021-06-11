@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#slider {
+  overflow: hidden;
+
+}
+#slider figure {
+  position: realtive;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinte;
+}
+#slider figure img{
+  width: 20%;
+  float: left;
+
+}
+@keyframes slider{
+  0%{ 
+  left:0; }
+  20%{
+    left:0;
+    25%{
+      left:-100%;
+    }
+  }
+}
+</style>
+  </head>
+  <body bgcolor= red>
+
+    <img src="gx.png">
+    <p style="text-align:center"><b>INTRA'21</b></p>
+    <p style="text-align:right"><b>CUrBrain</b></p>
+   &nbsp;
+    <p style="text-align:center"><b>-| GEEKONIX |-</b></p>
+    <!-- Do reads the rule then start & good luck -->
+    <div class="row">
+  <div class="column" style="background-color:red;">
+    <h3> Workshops, Seminars and Talks</h3>
+    <p>Geekonix conducts workshops related to in-trend technical topics such
+as robotics, coding, photography, and many more in college. Seminars
+focussing on higher studies, alternative career paths and
+opportunities are organized frequently. The college students get to
+experience inspirational talks with various eminent personalities from
+time to time.</p>
+      </div>
+  <div class="column" style="background-color:red;">
+    <h3>Technical Events</h3>
+    <p>EDGE - the brainchild of Geekonix and the second-largest tech fest in
+Eastern India, is organized by Geekonix with 48+ enthralling events
+with an unimaginable prize pool. For the students of our college to be
+able to savour EDGE with more tenacity and thrill, Geekonix organizes
+INTRA college tech fest exclusively for the college students.</p>
+  </div>
+  <div class="column" style="background-color:red;">
+    <h3>Fun Events</h3>
+    <p>The 3 days of EDGE are made more enjoyable, with FUN EVENTS like Paint
+Ball, Laser Tag, Red Bull Pong, Body Zorbing, Flip the Bottle and
+selfie competitions. After a day of intense competition and events, it
+helps the participants to relieve themselves and enjoy the moments.
+Winners get goodies and gift vouchers.</p>
+  </div>
+</div>
+   
+<div class="row">
+  <div class="column" id="pic">
+    <img src="flawless.jpg"  style="width:100%">
+  </div>
+  <div class="column" id="pic">
+
+    <img src="crypto.jpg"  style="width:100%">
+  </div>
+  <div class="column" id="pic">
+
+    <img src="webd.png"  style="width:100%">
+  </div>
+  <div class="column" id="pic">
+
+    <img src="bughunt.jpg" style="width:100%">
+  </div>
+</div>   
+
+<div id="slider">
+  <figure>
+    <img src="flawless.jpg">
+    <img src="crypto.jpg" >
+    <img src="webd.png">
+    <img src="bughunt.jpg">
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,24 @@
+/* color scheams */
+:root {
+  --col1: #000000;
+  --col2: #ff0000;
+  --col3: #181818;
+  --col4: rgba(88, 88, 88, 0.5);
+  --col5: rgba(100, 17, 17, 0.62);
+  --col6: #d8d8d8;
+}
+ 
+ img {
+ 	width :5%;
+ 	float: left;
+ 	margin: 1%;
+ }
+
+
+
+#pic {
+ 	width :20%;
+ 	size: 500px;
+ 	float: left;
+ 	margin: 1%;
+ }
